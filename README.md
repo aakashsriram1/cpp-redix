@@ -135,9 +135,3 @@ OK
 - Expand benchmark suite across mixed workloads
 - Add CI for parser, storage, and command tests
 - Publish flamegraphs and cache-miss analysis from repeatable benchmark runs
-
-## Resume Bullets
-
-- Built a Redis-compatible in-memory data store in C++17 with a non-blocking `epoll` TCP server, hand-written RESP parser, TTL expiry, hashes, sorted sets, and `redis-cli` compatibility.
-- Implemented custom storage primitives including Robin Hood hashing, incremental rehashing, ziplist-style small-hash encoding, and skip lists to study cache behavior and tail latency.
-- Designed a performance workflow using `redis-benchmark`, `perf`, flamegraphs, cache-miss analysis, and p50/p99 latency tracking to guide systems-level optimization.
